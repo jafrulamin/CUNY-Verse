@@ -10,17 +10,6 @@
   <header>
     <div class="logo">CUNYVerse</div>
 
-    <div class="search-bar">
-      <input type="text" placeholder="Event Name" id="eventSearch" onkeypress="if(event.key==='Enter'){searchEvents()}">
-      <select>
-        <option>All</option>
-        <option>Baruch</option>
-        <option>Brooklyn</option>
-        <option>Hunter</option>
-        <option>City College</option>
-      </select>
-    </div>
-
     <div class="user-controls">
       <div class="profile">
         <img src="images/profile-pic.png" alt="PFP">
@@ -32,6 +21,19 @@
 
   <main>
     <h1 class="events-title">Events</h1>
+
+    <!-- Search Bar with the College Drop Down Menu -->
+     <div class="search-bar">
+      <input type="text" placeholder="Event Name" id="eventSearch" onkeypress="if(event.key==='Enter'){searchEvents()}">
+      <select>
+        <option>All</option>
+        <option>Baruch</option>
+        <option>Brooklyn</option>
+        <option>Hunter</option>
+        <option>City College</option>
+      </select>
+      <button class="search">Search</button>
+    </div>
 
     <!-- Example Event Card -->
     <div class="event-card">
