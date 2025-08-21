@@ -24,14 +24,22 @@
 
     <!-- Search Bar with the College Drop Down Menu -->
      <div class="search-bar">
-      <input type="text" placeholder="Event Name" id="eventSearch" onkeypress="if(event.key==='Enter'){searchEvents()}">
-      <select>
-        <option>All</option>
-        <option>Baruch</option>
-        <option>Brooklyn</option>
-        <option>Hunter</option>
-        <option>City College</option>
-      </select>
+      <input type="text" placeholder="Event Name" id="eventSearch"{searchEvents()}">
+
+      <input list="colleges" id="collegeInput" placeholder="School">
+      <datalist id="colleges">
+        <option value="All">
+        <option value="Borough of Manhattan">
+        <option value="Brooklyn College">
+        <option value="City College of New York">
+        <option value="College of Staten Island">
+        <option value="Graduate Center">
+        <option value="Hunter College">
+        <option value="Lehman College">
+        <option value="Medgar Evers College">
+        <option value="Queens College">
+        <option value="York College">
+      </datalist>
       <button class="search">Search</button>
     </div>
 
