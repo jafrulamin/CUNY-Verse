@@ -15,7 +15,10 @@
         <img src="images/profile-pic.png" alt="PFP">
         <span>John Doe</span>
       </div>
-      <div class="toggle-nightmode"></div>
+
+      <div class="toggle-nightmode" id="nightToggle">
+        <div class="toggle-circle"></div>
+      </div>
     </div>
   </header>
 
@@ -26,7 +29,7 @@
      <div class="search-bar">
       <input type="text" placeholder="Event Name" id="eventSearch"{searchEvents()}">
 
-      <input list="colleges" id="collegeInput" placeholder="School">
+      <input list="colleges" id="collegeInput" placeholder="School Name">
       <datalist id="colleges">
         <option value="All">
         <option value="Borough of Manhattan">
@@ -40,6 +43,7 @@
         <option value="Queens College">
         <option value="York College">
       </datalist>
+
       <button class="search">Search</button>
     </div>
 
@@ -62,5 +66,6 @@
       <button class="rsvp-btn">RSVP</button>
     </div>
     </main>
+    <script src="main.js"></script>
 </body>
 </html>
