@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CUNYVerse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">CUNYVerse</div>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Event Name" id="eventSearch" onkeypress="if(event.key==='Enter'){searchEvents()}">
+      <select>
+        <option>All</option>
+        <option>Baruch</option>
+        <option>Brooklyn</option>
+        <option>Hunter</option>
+        <option>City College</option>
+      </select>
+    </div>
+
+    <div class="user-controls">
+      <div class="profile">
+        <img src="images/profile-pic.png" alt="PFP">
+        <span>John Doe</span>
+      </div>
+      <div class="toggle-nightmode"></div>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="events-title">Events</h1>
+
+    <!-- Example Event Card -->
+    <div class="event-card">
+      <div class="event-img"></div>
+      <div class="event-info">
+        <h3>Sample Event</h3>
+        <p class="event-meta">Date: Sept 5, 2025 | Capacity: 50</p>
+      </div>
+      <button class="rsvp-btn">RSVP</button>
+    </div>
+
+    <div class="event-card">
+      <div class="event-img"></div>
+      <div class="event-info">
+        <h3>Hackathon Meetup</h3>
+        <p class="event-meta">Date: Sept 10, 2025 | Capacity: 120</p>
+      </div>
+      <button class="rsvp-btn">RSVP</button>
+    </div>
+    </main>
+</body>
+</html>
