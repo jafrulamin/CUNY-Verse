@@ -1,3 +1,4 @@
+CUniverse
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -83,3 +84,91 @@
     <script src="homepage.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CUNYVerse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">CUNYVerse</div>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Event Name" id="eventSearch" onkeypress="if(event.key==='Enter'){searchEvents()}">
+      <select>
+        <option>All</option>
+        <option>Baruch College</option>
+        <option>Brooklyn College</option>
+        <option>Hunter College</option>
+        <option>City College</option>
+        <option>Queens College</option>
+        <option>John Jay College</option>
+      </select>
+    </div>
+
+
+    <div class="user-controls">
+      <div class="profile">
+        <img src="images/profile-pic.png" alt="PFP">
+        <span>John Doe</span>
+      </div>
+
+      <div class="toggle-nightmode" id="nightToggle">
+        <div class="toggle-circle"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="events-title">Events</h1>
+
+    <!-- Search Bar with the College Drop Down Menu -->
+     <div class="search-bar">
+      <input type="text" placeholder="Event Name" id="eventSearch"{searchEvents()}">
+
+      <input list="colleges" id="collegeInput" placeholder="School Name">
+      <datalist id="colleges">
+        <option value="All">
+        <option value="Borough of Manhattan">
+        <option value="Brooklyn College">
+        <option value="City College of New York">
+        <option value="College of Staten Island">
+        <option value="Graduate Center">
+        <option value="Hunter College">
+        <option value="Lehman College">
+        <option value="Medgar Evers College">
+        <option value="Queens College">
+        <option value="York College">
+      </datalist>
+
+      <button class="search">Search</button>
+    </div>
+
+    <!-- Example Event Card -->
+    <div class="event-card">
+      <div class="event-img"></div>
+      <div class="event-info">
+        <h3>Sample Event</h3>
+        <p class="event-desc">blah blah blah boring school stuff im so tired this is making me go insane someone save me</p>
+        <p class="event-meta">Date: Sept 5, 2025 | Capacity: 0/50 | Location: idfk lol | Organizer: Some dumb ahh college</p>
+      </div>
+      <button class="rsvp-btn">RSVP</button>
+    </div>
+
+    <div class="event-card">
+      <div class="event-img"></div>
+      <div class="event-info">
+        <h3>Hackathon Meetup</h3>
+        <p class="event-meta">Date: Sept 10, 2025 | Capacity: 120 | Location: 4 Pennsylvania Plaza, New York, NY 10001 | Organizer: Queens College</p>
+      </div>
+      <button class="rsvp-btn">RSVP</button>
+    </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+                         </html>
+                         main
